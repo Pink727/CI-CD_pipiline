@@ -1,16 +1,9 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-import NodePolyfills from 'vite-plugin-node-polyfills';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-    react(),
-    NodePolyfills({
-      // To include specific polyfills, you can configure here
-      crypto: true,
-    }),
-  ],
+  plugins: [react()],
   server: {
     port: 3000,
     open: true,
